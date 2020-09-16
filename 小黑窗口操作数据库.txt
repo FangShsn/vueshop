@@ -1,0 +1,14 @@
+第一步打开小黑窗口  
+(方法二找到你所装的服务器里面的mysql里面的bin点开 ,复制路径 查找cmd 命令行,打开, 输入cd +之前复制的路径 ,进行路径切换 
+notice 这个方法一定要命令行和mysql在一个盘,如果跨盘就不行了)
+1点击其他选项菜单
+2选择mysql工具里面的mysql命令行(就打开了小黑窗口了)
+几个常见对小黑窗口的命令
+所有命令要加分号
+cd 切换路径
+exit退出
+mysql -u root -p 密码框输入密码
+cls /clear  清屏
+set password for root@localhost=password ("新密码")  设置密码
+其余命令和mysql命令一致
+

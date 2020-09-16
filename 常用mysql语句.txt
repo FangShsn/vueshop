@@ -1,0 +1,34 @@
+常用命令 (记得加分号)
+cd 路径  切换到指定路径
+mysql -u root -p  密码框输入密码
+数据和表格的增删改查
+查询
+show databases  显示全部数据库 
+use 数据库名称     使用一个数据库，相当于进入指定的数据库 
+ show tables;      显示当前数据库中有哪些表 
+ desc 表名称;      查看指定表结构 
+新增
+create database 数据库名称 ;  ‐‐ 创建一个指定名称的数据库
+create table 表名称 (id int, name varchar(20), age int);            创建一个指定名称的表格(后面为内容设置)
+ 删除
+drop database 数据库名称;      删除一个指定名称的数据库 
+drop table  表名称 ;                  删除一个指定名称的数据表
+
+表格内容增删改查
+查询
+select * from 表名称 where id=自己需要的那一行(name='.....');    查询指定id
+select id  from  表名称 ;                        查询指定所有id
+增加
+insert into 表名称 values (null, '王五', 0, '2020‐12‐12', '12312');         增加一行
+insert into  表名称 (name, gender, avatar) values ('王五', 0, '12312');   增加一行
+修改
+update users set name = '麻子', gender = 0   修改所有的数据
+update users set name = '麻子', gender = 0 where id=2  ;  修改指定id的数据
+删除
+delete from 表名称 where id=2;       删除指定一行
+delete from users where id = 6 and gender = 0    删除指定几行
+delete from users where id = 6 or gender = 0   删除指定一行
+
+
+
+
